@@ -14,6 +14,7 @@ endforeach()
 
 add_library(backend
     backend.cpp
+    ${PLUGINS_DIR}/action/actionrpc_impl.cpp
     ${GRPC_COMPILED_SOURCES}
     ${PB_COMPILED_SOURCES}
 )
